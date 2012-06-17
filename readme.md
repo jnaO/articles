@@ -5,7 +5,16 @@ The articles making up jnao.me.
 
 PPL
 -----
-* CSS3 filters, animations, transitions and text fx (stroke etc)
+* CSS3
+  * filters
+    * dropshadow
+    * sepia
+    * saturate
+  * animations
+  * transitions
+  * text-stroke
+  * mask-image
+  * background-clip
 * Webfonts
 
 
