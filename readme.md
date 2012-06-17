@@ -1,4 +1,4 @@
-JNAO.ME ARTICLES
+jnao.me articles
 ================
 
 The articles making up jnao.me.
