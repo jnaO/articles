@@ -1,0 +1,229 @@
+/**
+ * =============================================================
+ *    A lot of this stuff here I've learned from inspecting
+ *    the source code on a lot of different websites.
+ *
+ *    But I would like to lift up lab.simurai.com above the
+ *    others, since I've learned a bit more from that site.
+ *
+ *    If you like stuff like this, and haven't been there
+ *    already, you def need to go check it out!
+ * =============================================================
+ **/
+
+
+#oversized input[type="range"] {
+  -webkit-appearance: none; /* Remove webkit default */
+  outline: none;
+
+  display: block;
+  position: relative;
+
+  width: 50%;
+  height: 5px;
+  margin: 50px auto;
+
+  border-radius: 20px;
+  border: 7px solid rgba(0,0,0,0);
+  background-color: #9DB244;
+  background-image:
+            -webkit-linear-gradient(0deg,
+              #8DA335 0%,
+              #C4BB46 50%,
+              #AD540B 100%
+            );
+  background-clip: content-box;
+
+  box-shadow:
+            inset 0 1px 2px rgba(0,0,0,0.3),
+            0 -1px 1px rgba(0,0,0,0.1),
+            0 1px 1px rgba(255,255,255,0.3)
+            ;
+  -webkit-transition: box-shadow .3s;
+}
+
+#oversized input[type="range"]:focus,
+#oversized input[type="range"]:active {
+  box-shadow:
+            inset 0 1px 2px rgba(0,0,0,0.3),
+            0 -1px 1px rgba(0,0,0,0.1),
+            0 1px 1px rgba(255,255,255,0.3),
+            0 0 15px 2px hsla(200, 50%, 87%, 1);
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~ The handle ~~~~~~~~~~~~~~~~~~~~~*/
+#oversized input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove Safari default */
+  /*position: relative;
+  z-index:    1;*/
+
+  /*---------------- Over sized... ------------------------*/
+  width: 150px;
+  height: 150px;
+  border-radius: 100% ;
+  border-bottom: 1px solid #333;
+
+  /*---------------- Brushed metal handle -----------------*/
+  background-image:
+            -webkit-radial-gradient(  50% 50%, 50% 50%,
+              hsla(0,0%,0%,.3),
+              hsla(0,0%,0%,0) 30%
+            ),
+
+
+            -webkit-linear-gradient(-35deg,
+              hsla(0, 0%, 70%, 0) 30%,
+              hsla(0, 0%, 70%, .5) 45%,
+              hsla(0, 0%, 60%, .5) 50%,
+              hsla(0, 0%, 70%, .5) 95%,
+              hsla(0, 0%, 70%, 0) 60%
+            ),
+            -webkit-linear-gradient(15deg,
+              hsla(0, 0%, 100%, 0) 30%,
+              hsla(0, 0%, 100%, .2) 45%,
+              hsla(0, 0%, 100%, .7) 50%,
+              hsla(0, 0%, 100%, .2) 55%,
+              hsla(0, 0%, 100%, 0) 60%
+            ),
+            -webkit-linear-gradient(290deg,
+              hsla(0, 0%, 100%, 0) 30%,
+              hsla(0, 0%, 100%, .2) 45%,
+              hsla(0, 0%, 100%, .5) 50%,
+              hsla(0, 0%, 100%, .2) 55%,
+              hsla(0, 0%, 100%, 0) 60%
+            ),
+            -webkit-linear-gradient(255deg,
+              hsla(0, 0%, 70%, 0) 30%,
+              hsla(0, 0%, 70%, .5) 45%,
+              hsla(0, 0%, 60%, .5) 50%,
+              hsla(0, 0%, 70%, .5) 55%,
+              hsla(0, 0%, 70%, 0) 60%
+            ),
+
+            -webkit-repeating-radial-gradient(  50% 50%, 50% 50%,
+              hsla(0,0%,15%,.04)0%,
+              hsla(0,0%,100%,0) 5%,
+              hsla(0,0%,50%,.06) 10%,
+              hsla(0,0%,100%,0) 25%
+            ),
+
+
+            -webkit-linear-gradient(125deg,
+              hsla(0, 0%, 100%, 0) 30%,
+              hsla(0, 0%, 100%, .5) 45%,
+              hsla(0, 50%, 100%, 1) 50%,
+              hsla(0, 0%, 100%, .2) 55%,
+              hsla(0, 0%, 100%, 0) 60%
+            ),
+            -webkit-linear-gradient(-30deg,
+              hsla(0, 0%, 70%, 0) 30%,
+              hsla(0, 0%, 70%, .5) 45%,
+              hsla(0, 0%, 40%, .5) 50%,
+              hsla(0, 0%, 70%, .5) 55%,
+              hsla(0, 0%, 70%, 0) 60%
+            ),
+            -webkit-linear-gradient(300deg,
+              hsla(0, 0%, 100%, 0) 30%,
+              hsla(0, 0%, 100%, .2) 45%,
+              hsla(0, 0%, 100%, .5) 50%,
+              hsla(0, 0%, 100%, .2) 55%,
+              hsla(0, 0%, 100%, 0) 60%
+            ),
+            -webkit-linear-gradient(265deg,
+              hsla(0, 0%, 70%, 0) 30%,
+              hsla(0, 0%, 70%, .5) 45%,
+              hsla(0, 0%, 30%, .5) 50%,
+              hsla(0, 0%, 70%, .5) 55%,
+              hsla(0, 0%, 70%, 0) 60%
+            ),
+            -webkit-linear-gradient(25deg,
+              hsla(0, 0%, 100%, 0) 30%,
+              hsla(0, 0%, 100%, .2) 45%,
+              hsla(0, 0%, 100%, .7) 50%,
+              hsla(0, 0%, 100%, .2) 55%,
+              hsla(0, 0%, 100%, 0) 60%
+            ),
+
+
+
+          -webkit-linear-gradient(-25deg,
+              hsla(0, 0%, 70%, 0) 30%,
+              hsla(0, 0%, 70%, .5) 45%,
+              hsla(0, 0%, 60%, .5) 50%,
+              hsla(0, 0%, 70%, .5) 55%,
+              hsla(0, 0%, 70%, 0) 60%
+            ),
+            -webkit-linear-gradient(310deg,
+              hsla(0, 0%, 100%, 0) 30%,
+              hsla(0, 0%, 100%, .2) 45%,
+              hsla(0, 0%, 100%, .5) 50%,
+              hsla(0, 0%, 100%, .2) 55%,
+              hsla(0, 0%, 100%, 0) 60%
+            ),
+            -webkit-linear-gradient(275deg,
+              hsla(0, 0%, 70%, 0) 30%,
+              hsla(0, 0%, 70%, .5) 45%,
+              hsla(0, 0%, 60%, .5) 50%,
+              hsla(0, 0%, 70%, .5) 55%,
+              hsla(0, 0%, 70%, 0) 60%
+            ),
+            -webkit-linear-gradient(35deg,
+              hsla(0, 0%, 100%, 0) 30%,
+              hsla(0, 0%, 100%, .2) 45%,
+              hsla(0, 0%, 100%, .5) 50%,
+              hsla(0, 0%, 100%, .2) 55%,
+              hsla(0, 0%, 100%, 0) 60%
+            ),
+
+
+
+            -webkit-radial-gradient(  50% 50%, 50% 50%,
+              hsla(0,0%,70%,1),
+              hsla(0,0%,90%,1)
+              );
+
+  box-shadow:
+            inset 0 4px 4px #fff,
+            inset 0 -4px 4px #000,
+
+            0px -4px 4px hsla(0, 0%, 70%, .2),
+            3px 8px 4px hsla(0, 0%, 10%, .1),
+            0px 4px 8px hsla(0, 0%, 10%, .7),
+            0px 0px 15px hsla(0, 0%, 100%, .5)
+            ;
+
+
+
+}
+
+/*---------------- Sneaky trick, overlay highlights on the edge of the handle -----------------*/
+#oversized input[type="range"]::-webkit-slider-thumb:before, #oversized input[type="range"]::-webkit-slider-thumb:after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+
+  /* fake conical gradients */
+  background-image:   -webkit-radial-gradient(  50%   0%, 50% 50%, hsla(0,0%,100%,.4) 0%, hsla(0,0%,100%,0) 50%),
+            -webkit-radial-gradient(  50% 80%, 50% 50%, hsla(0,0%,100%,.1) 0%, hsla(0,0%,100%,0) 50%),
+            -webkit-radial-gradient( 100%  50%, 70% 100%, hsla(0,0%,100%,.4) 0%, hsla(0,0%,0%,0) 100%);
+}
+#oversized input[type="range"]::-webkit-slider-thumb:before {  -webkit-transform: rotate( 70deg); }
+#oversized input[type="range"]::-webkit-slider-thumb:after { -webkit-transform: rotate(-20deg); }
+
+/*~~~~~~~~~~~~~~~~ Make the handle "overflow" the range-track so the illusionary
+                        fx that the center is at the endpoints are achieved ~~~~~~~~~~~~~~~~*/
+#oversized input[type="range"]::-webkit-slider-container {
+    width: 136%;
+    margin: 0 0 0 -18%;
+}
+#oversized input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-box-flex: 1;
+    -webkit-box-sizing: border-box;
+    display: block;
+}
