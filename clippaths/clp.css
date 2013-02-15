@@ -1,0 +1,15 @@
+.svg-wrap {
+  text-align: center;
+}
+.svg-graphic {
+  margin: -90px 0 0;
+}
+
+svg image {
+  -webkit-transition: opacity 300ms ease;
+  -moz-transition: opacity 300ms ease;
+  transition: opacity 300ms ease; }
+svg polygon:hover {
+  opacity: 1; }
+svg a:hover image {
+  opacity: 0.4; }

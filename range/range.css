@@ -56,8 +56,8 @@
 /*~~~~~~~~~~~~~~~~~~~~ The handle ~~~~~~~~~~~~~~~~~~~~~*/
 #oversized input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none; /* Remove Safari default */
-  /*position: relative;
-  z-index:    1;*/
+  position: relative;
+  z-index:    1;
 
   /*---------------- Over sized... ------------------------*/
   width: 150px;

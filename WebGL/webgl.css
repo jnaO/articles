@@ -1,0 +1,44 @@
+/**
+ * =============================================================
+ *    A lot of this stuff here I've learned from inspecting
+ *    the source code on a lot of different websites.
+ *
+ *    But I would like to lift up lab.simurai.com above the
+ *    others, since I've learned a bit more from that site.
+ *
+ *    If you like stuff like this, and haven't been there
+ *    already, you def need to go check it out!
+ * =============================================================
+ **/
+
+#SVG {
+  -webkit-perspective: 500;
+}
+.svg-canvas {
+  margin: 0 auto;
+  display: block;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateY(40deg);
+  -moz-transform: rotateY(40deg);
+  -o-transform: rotateY(40deg);
+  -ms-transform: rotateY(40deg);
+  transform: rotateY(40deg);
+}
+rect {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  -webkit-box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+rect:hover {
+  opacity: 1;
+}
