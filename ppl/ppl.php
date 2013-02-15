@@ -8,9 +8,9 @@
       <dl class="post-description">
         <dt>i:</dt>
         <dd><a onclick="_gaq.push(['_trackEvent', 'Social', 'ppl', 'twitter'])" class="twitter">@chenebu</a></dd>
+        <dt>Requirements:</dt>
+        <dd><a href="https://www.google.com/chrome" title="Download Goole Chrome web browser">Google Chrome</a></dd>
         <dt>in my earphones:</dt>
         <dd><a  onclick="_gaq.push(['_trackEvent', 'Music', 'ppl', 'Mile of Solace'])" href="http://open.spotify.com/artist/7Kx0eIQ6tAPnZuaQT0PEJd">Mile of Solace (spotify link)</a></dd>
-        <dt>Requirements:</dt>
-        <dd><a href="https://www.google.com/chrome" title="Download Goole Chrome web browser">Google Chrome</a>, <a href="https://tools.google.com/dlpage/chromesxs" title="Download developer version of google chrome">Google Chrome Canary</a></dd>
       </dl>
     </article>

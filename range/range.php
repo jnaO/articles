@@ -7,6 +7,8 @@
         <dd><a onclick="_gaq.push(['_trackEvent', 'Social', 'sharp sliders', 'twitter'])" class="twitter">@chenebu</a></dd>
         <dt>inspiration:</dt>
         <dd><a onclick="_gaq.push(['_trackEvent', 'External', 'sharp sliders', 'inspiration'])" href="http://dribbble.com/shots/317275-Sharp-Sliders">sharp sliders</a></dd>
+        <dt>Requirements:</dt>
+        <dd><a href="https://www.google.com/chrome" title="Download Goole Chrome web browser">Google Chrome</a></dd>
         <dt>in my earphones:</dt>
         <dd><a  onclick="_gaq.push(['_trackEvent', 'Music', 'sharp sliders', 'kite 4'])" href="http://open.spotify.com/album/1GrfYZSn0DVd4aGZ8YIkCC">kite 4 (spotify link)</a></dd>
       </dl>
