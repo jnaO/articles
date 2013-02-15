@@ -4,7 +4,7 @@
       <input class="exp-elem" type="range" name="range-1" value="100" min="0" max="100">
       <dl class="post-description">
         <dt>i:</dt>
-        <dd><a onclick="_gaq.push(['_trackEvent', 'Social', 'sharp sliders', 'twitter'])" class="twitter">@chenebu</a></dd>
+        <dd><a href="https://twitter.com/chenebu" onclick="_gaq.push(['_trackEvent', 'Social', 'sharp sliders', 'twitter'])" class="twitter">@chenebu</a></dd>
         <dt>inspiration:</dt>
         <dd><a onclick="_gaq.push(['_trackEvent', 'External', 'sharp sliders', 'inspiration'])" href="http://dribbble.com/shots/317275-Sharp-Sliders">sharp sliders</a></dd>
         <dt>Requirements:</dt>

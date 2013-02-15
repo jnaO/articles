@@ -18,7 +18,7 @@
       </div>
       <dl class="post-description">
         <dt>i:</dt>
-        <dd><a onclick="_gaq.push(['_trackEvent', 'Social', 'sharp sliders', 'twitter'])" class="twitter">@chenebu</a></dd>
+        <dd><a href="https://twitter.com/chenebu" onclick="_gaq.push(['_trackEvent', 'Social', 'sharp sliders', 'twitter'])" class="twitter">@chenebu</a></dd>
         <dt>inspiration:</dt>
         <dd><a onclick="_gaq.push(['_trackEvent', 'External', 'sharp sliders', 'inspiration'])" href="http://www.flickr.com/photos/veerles-blog/3230371629/in/photostream/">veerles spirograph</a></dd>
         <dt>Requirements:</dt>

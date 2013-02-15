@@ -7,7 +7,7 @@
 
       <dl class="post-description">
         <dt>i:</dt>
-        <dd><a onclick="_gaq.push(['_trackEvent', 'Social', 'ppl', 'twitter'])" class="twitter">@chenebu</a></dd>
+        <dd><a href="https://twitter.com/chenebu" onclick="_gaq.push(['_trackEvent', 'Social', 'ppl', 'twitter'])" class="twitter">@chenebu</a></dd>
         <dt>Requirements:</dt>
         <dd><a href="https://www.google.com/chrome" title="Download Goole Chrome web browser">Google Chrome</a></dd>
         <dt>in my earphones:</dt>
