@@ -57,16 +57,28 @@
    **/
   color: rgba(255,255,255,.93);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
 
   /**
    * scratches on text-surface
    **/
   -webkit-mask-image: url(img/mask.png);
+  -moz-mask-image: url(img/mask.png);
+  -ms-mask-image: url(img/mask.png);
+  -o-mask-image: url(img/mask.png);
+  mask-image: url(img/mask.png);
 
   /**
    * Text outline
    **/
   -webkit-text-stroke: 1px hsl(210, 20%, 67%);
+  -moz-text-stroke: 1px hsl(210, 20%, 67%);
+  -ms-text-stroke: 1px hsl(210, 20%, 67%);
+  -o-text-stroke: 1px hsl(210, 20%, 67%);
+  text-stroke: 1px hsl(210, 20%, 67%);
 
   /**
    * Standard transition on the stroke and text color
@@ -74,6 +86,22 @@
   -webkit-transition-property: color -webkit-text-stroke;
   -webkit-transition-duration: 3s;
   -webkit-transition-timing-effect: ease-out;
+
+  -moz-transition-property: color -moz-text-stroke;
+  -moz-transition-duration: 3s;
+  -moz-transition-timing-effect: ease-out;
+
+  -ms-transition-property: color -ms-text-stroke;
+  -ms-transition-duration: 3s;
+  -ms-transition-timing-effect: ease-out;
+
+  -o-transition-property: color -o-text-stroke;
+  -o-transition-duration: 3s;
+  -o-transition-timing-effect: ease-out;
+
+  transition-property: color text-stroke;
+  transition-duration: 3s;
+  transition-timing-effect: ease-out;
 
 
   /**
@@ -102,6 +130,38 @@
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-delay: 0s;
 
+  -moz-animation-name: ppl-filter-out;
+  -moz-animation-direction: normal;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-delay: 0s;
+
+  -ms-animation-name: ppl-filter-out;
+  -ms-animation-direction: normal;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-duration: 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-timing-function: ease-out;
+  -ms-animation-delay: 0s;
+
+  -o-animation-name: ppl-filter-out;
+  -o-animation-direction: normal;
+  -o-animation-fill-mode: forwards;
+  -o-animation-duration: 1s;
+  -o-animation-iteration-count: 1;
+  -o-animation-timing-function: ease-out;
+  -o-animation-delay: 0s;
+
+  animation-name: ppl-filter-out;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+
 
 }
 .clip-box h3:hover {
@@ -119,6 +179,62 @@
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-delay: 0s;
+
+  -moz-mask-image: url(img/mask_2.png);
+  -moz-transition-property: color -moz-text-stroke;
+  -moz-transition-duration: 3s;
+  -moz-transition-timing-effect: ease-out;
+
+  -moz-text-stroke: 0 hsla(210, 20%, 67%, 0);
+  -moz-animation-name: ppl-filter;
+  -moz-animation-duration: .5s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-delay: 0s;
+
+  -ms-mask-image: url(img/mask_2.png);
+  -ms-transition-property: color -ms-text-stroke;
+  -ms-transition-duration: 3s;
+  -ms-transition-timing-effect: ease-out;
+
+  -ms-text-stroke: 0 hsla(210, 20%, 67%, 0);
+  -ms-animation-name: ppl-filter;
+  -ms-animation-duration: .5s;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-direction: normal;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-timing-function: ease-out;
+  -ms-animation-delay: 0s;
+
+  -o-mask-image: url(img/mask_2.png);
+  -o-transition-property: color -o-text-stroke;
+  -o-transition-duration: 3s;
+  -o-transition-timing-effect: ease-out;
+
+  -o-text-stroke: 0 hsla(210, 20%, 67%, 0);
+  -o-animation-name: ppl-filter;
+  -o-animation-duration: .5s;
+  -o-animation-iteration-count: 1;
+  -o-animation-direction: normal;
+  -o-animation-fill-mode: forwards;
+  -o-animation-timing-function: ease-out;
+  -o-animation-delay: 0s;
+
+  mask-image: url(img/mask_2.png);
+  transition-property: color text-stroke;
+  transition-duration: 3s;
+  transition-timing-effect: ease-out;
+
+  text-stroke: 0 hsla(210, 20%, 67%, 0);
+  animation-name: ppl-filter;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
 }
 
 .clip-box .paragraph {
@@ -155,5 +271,85 @@
   100% {
     color: rgba(255,255,255,.93);
     -webkit-filter: drop-shadow(rgba(0,0,0,0) 13px 13px 8px) sepia(0%) saturate(100%);
+  }
+}
+@-moz-keyframes ppl-filter {
+  0% {
+    color: rgba(255,255,255,.93);
+    -moz-filter: drop-shadow(rgba(0,0,0,0) 13px 13px 8px) sepia(0%) saturate(100%);
+  }
+  100% {
+    color: transparent;
+    -moz-filter: drop-shadow(rgba(0,0,0,0.7) 13px 13px 8px) sepia(70%) saturate(90%);
+  }
+}
+@-moz-keyframes ppl-filter-out {
+  0% {
+    color: transparent;
+    -moz-filter: drop-shadow(rgba(0,0,0,0.7) 13px 13px 8px) sepia(70%) saturate(90%);
+  }
+  100% {
+    color: rgba(255,255,255,.93);
+    -moz-filter: drop-shadow(rgba(0,0,0,0) 13px 13px 8px) sepia(0%) saturate(100%);
+  }
+}
+@-ms-keyframes ppl-filter {
+  0% {
+    color: rgba(255,255,255,.93);
+    -ms-filter: drop-shadow(rgba(0,0,0,0) 13px 13px 8px) sepia(0%) saturate(100%);
+  }
+  100% {
+    color: transparent;
+    -ms-filter: drop-shadow(rgba(0,0,0,0.7) 13px 13px 8px) sepia(70%) saturate(90%);
+  }
+}
+@-ms-keyframes ppl-filter-out {
+  0% {
+    color: transparent;
+    -ms-filter: drop-shadow(rgba(0,0,0,0.7) 13px 13px 8px) sepia(70%) saturate(90%);
+  }
+  100% {
+    color: rgba(255,255,255,.93);
+    -ms-filter: drop-shadow(rgba(0,0,0,0) 13px 13px 8px) sepia(0%) saturate(100%);
+  }
+}
+@-o-keyframes ppl-filter {
+  0% {
+    color: rgba(255,255,255,.93);
+    -o-filter: drop-shadow(rgba(0,0,0,0) 13px 13px 8px) sepia(0%) saturate(100%);
+  }
+  100% {
+    color: transparent;
+    -o-filter: drop-shadow(rgba(0,0,0,0.7) 13px 13px 8px) sepia(70%) saturate(90%);
+  }
+}
+@-o-keyframes ppl-filter-out {
+  0% {
+    color: transparent;
+    -o-filter: drop-shadow(rgba(0,0,0,0.7) 13px 13px 8px) sepia(70%) saturate(90%);
+  }
+  100% {
+    color: rgba(255,255,255,.93);
+    -o-filter: drop-shadow(rgba(0,0,0,0) 13px 13px 8px) sepia(0%) saturate(100%);
+  }
+}
+@keyframes ppl-filter {
+  0% {
+    color: rgba(255,255,255,.93);
+    filter: drop-shadow(rgba(0,0,0,0) 13px 13px 8px) sepia(0%) saturate(100%);
+  }
+  100% {
+    color: transparent;
+    filter: drop-shadow(rgba(0,0,0,0.7) 13px 13px 8px) sepia(70%) saturate(90%);
+  }
+}
+@keyframes ppl-filter-out {
+  0% {
+    color: transparent;
+    filter: drop-shadow(rgba(0,0,0,0.7) 13px 13px 8px) sepia(70%) saturate(90%);
+  }
+  100% {
+    color: rgba(255,255,255,.93);
+    filter: drop-shadow(rgba(0,0,0,0) 13px 13px 8px) sepia(0%) saturate(100%);
   }
 }

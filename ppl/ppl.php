@@ -1,5 +1,5 @@
     <!-- the id is used as title of post -->
-    <article id="Type0" data-mtest="inputtypes.range" class="post clip-box">
+    <article id="Type0" data-mtest="cssanimations" class="post clip-box">
       <label class="post-title">Type0</label>
 
       <h3 contenteditable="true" class="exp-elem lettering-title-2">peo<br />ple</h3>
