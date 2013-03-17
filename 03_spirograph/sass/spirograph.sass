@@ -1,3 +1,4 @@
+@import '_animations'
 $size: 300
 $offset: 30
 
@@ -64,7 +65,7 @@ $offset: 30
 
 
 @for $i from 0 through 9
-  .go.c#{$i}
+  .c#{$i}
     $t: 0
     @if $i < 3
       $t: 0
@@ -76,20 +77,16 @@ $offset: 30
     @if $i%3 == 0
       z-index: 3
       +bgi(radial-gradient(hsla(40, 50%, 90%, 0.2) -5%, hsla( 178, 66%, 57%, 0.5) 90%))
+      +anim((zero_+$t 10s infinite forwards normal ease-in-out))
     @else if $i%3 == 1
       z-index: 1
       +bgi(radial-gradient(hsla(0, 100%, 100%, 0) -10%, hsla( 40, 100%, 70%, 0.8) 90%))
+      +anim((one_+$t 10s infinite forwards normal ease-in-out))
     @else if $i%3 == 2
       z-index: 2
       +bgi(radial-gradient(hsla(332, 100%, 100%, 0) -5%, hsla( 332, 60%, 50%, 0.8) 90%))
+      +anim((two_+$t 10s infinite forwards normal ease-in-out))
 
-    // Rotate the clusters 48 deg apart ($i%3 * 48),
-    // and the individual circles within the clusters 120 deg apart ($t * 120)
-    -webkit-transform: rotate((-35 + ($i%3 * 48) + ($t * 120))+deg) translate3D(0,20px,0)
-    -moz-transform: rotate((-35 + ($i%3 * 48) + ($t * 120))+deg) translate3D(0,20px,0)
-    -ms-transform: rotate((-35 + ($i%3 * 48) + ($t * 120))+deg) translate3D(0,20px,0)
-    -o-transform: rotate((-35 + ($i%3 * 48) + ($t * 120))+deg) translate3D(0,20px,0)
-    transform: rotate((-35 + ($i%3 * 48) + ($t * 120))+deg) translate3D(0,20px,0)
 
 // Add the dotted circles on top
 div[class*=d]
@@ -114,11 +111,7 @@ div[class*=d]
 // Rotate the dotted circles
 @for $d from 0 through 2
   .go.d#{$d}
-    -webkit-transform: rotate((75 + $d * 120)+deg) translate3D(0,20px,0)
-    -moz-transform: rotate((75 + $d * 120)+deg) translate3D(0,20px,0)
-    -ms-transform: rotate((75 + $d * 120)+deg) translate3D(0,20px,0)
-    -o-transform: rotate((75 + $d * 120)+deg) translate3D(0,20px,0)
-    transform: rotate((75 + $d * 120)+deg) translate3D(0,20px,0)
+    +anim((dot_+$d 10s infinite forwards normal ease-in-out))
 
 // The 48 deg
 .text
@@ -134,7 +127,7 @@ div[class*=d]
   text-shadow: -1px -1px 2px rgba(0,0,0,0.2), -1px -1px 2px rgba(255,255,255,0.2)
   +transit(opacity 2s 3.5s)
 .go.text
-  opacity: 1
+  +anim((_text_ 10s infinite forwards normal ease-in-out))
 
 .link
   margin: -18px 0 0

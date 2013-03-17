@@ -24,6 +24,6 @@
         <dt>Requirements:</dt>
         <dd><a href="https://www.google.com/chrome" title="Download Goole Chrome web browser">Google Chrome</a>, <a href="http://www.mozilla.org/en-US/firefox/new/" title="Download firefox">FireFox</a></dd>
         <dt>in my earphones:</dt>
-        <dd><a  onclick="_gaq.push(['_trackEvent', 'Music', 'spirograph', 'ben howard'])" href="http://open.spotify.com/track/3dnpOdwDKjl5h9dtfx0eBB">ben howard (spotify link)</a></dd>
+        <dd><a  onclick="_gaq.push(['_trackEvent', 'Music', 'spirograph', 'ben howard'])" href="http://open.spotify.com/track/7MotTmyL8ZsFIxFt9MDtGv">tom waits (spotify link)</a></dd>
       </dl>
     </article>

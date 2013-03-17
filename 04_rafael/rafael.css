@@ -1,14 +1,12 @@
 #rafael.post {
   padding: 60px 0;
-  position: relative;
-}
+  position: relative; }
 
 .paper {
   top: 50px;
   left: 225px;
   display: block;
-  position: absolute;
-}
+  position: absolute; }
 
 .shadow {
   -webkit-filter: blur(4px);
@@ -20,17 +18,15 @@
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-#svg.post:hover .shadow {
-  -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
-  -ms-filter: blur(1px);
-  -o-filter: blur(1px);
-  filter: blur(1px);
-  top: 34px;
-  left: 227px;
-}
+  transition: all 0.3s; }
+  #svg.post:hover .shadow {
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    -o-filter: blur(1px);
+    filter: blur(1px);
+    top: 34px;
+    left: 227px; }
 
 #paper {
   top: 50px;
@@ -38,5 +34,4 @@
   width: 350px;
   height: 350px;
   display: block;
-  position: absolute;
-}
+  position: absolute; }
